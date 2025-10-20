@@ -1,5 +1,5 @@
 <template>   
-    <h2 class="text-2xl py-4 sticky top-0 bg-[#8dc6ff] z-10">Experience</h2>
+    <h2 class="py-4 sticky top-0 bg-[#8dc6ff] text-[#e4f1fe] font-bold text-4xl z-10">Experience</h2>
     <h3 class="font-bold">Front-End Developer</h3>
     <p >Urban Zoo</p>
     <p >Apr. 2025 – Oct. 2025 | <span class="italic">Warrington, UK</span></p>

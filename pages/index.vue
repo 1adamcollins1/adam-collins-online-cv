@@ -3,19 +3,23 @@
     :class="shiftCvLeft ? 'left-[-33.3%]' : 'left-0'"
   >
     <div 
-      class="absolute bottom-4 left-4 bg-[#8dc6ff] h-10 w-10 rounded-full z-50"
+      class="flex absolute bottom-4 left-4 bg-[#8dc6ff] h-10 w-10 rounded-full z-50 items-center justify-center"
       @click="revealContent()"
     >
+      <Icon 
+        name="mdi:play" 
+        class="text-white  text-5xl "
+      />
     </div>
     <div class="relative h-full w-screen">
       <div 
-        class="absolute inset-0 p-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-[28%] h-[12%] z-50 flex flex-col justify-center items-center translate-all duration-500"
-        :class="pinTitle ? 'top-[6%]' : 'top-1/2', pinTitleChildren ? '' : 'text-[#8dc6ff]'"
+      class="absolute inset-0 p-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-[28%] h-[15%] z-50 flex flex-col justify-between items-center translate-all duration-500"
+        :class="pinTitle ? 'top-[7.5%]' : 'top-1/2', pinTitleChildren ? '' : 'text-[#8dc6ff]'"
         @click="toggleTitle()"
       >
         <p 
-          class="translate-all duration-500"
-          :class="pinTitleChildren ? 'text-2xl' : 'text-4xl'"
+          class="translate-all duration-500 font-medium"
+          :class="pinTitleChildren ? 'text-5xl' : 'text-4xl'"
         >
           Adam Collins
         </p>
@@ -70,9 +74,9 @@
         <div class="relative w-[35%] h-full">
         </div>
         <div class="relative w-[30%] h-full flex flex-col p-4">
-          <div class="h-[10%]"></div>
+          <div class="h-[15%]"></div>
           <div 
-            class="h-fit text-center flex justify-center items-center flex-col py-4"
+            class="h-fit text-center flex justify-center items-center flex-col pb-4"
             :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
           >
             <img src="../public/images/profilepic.png" alt="" class=" w-32 h-44">
@@ -83,7 +87,7 @@
             <div class="absolute top-[-3px] left-0 w-full h-full top-fade transition-all duration-1000"
               :class="!pinTitleChildrenTwo ? 'translate-y-0' : 'translate-y-full'"
             ></div>
-            <h2 class="text-2xl">Skills</h2>
+            <h2 class="text-[#e4f1fe] font-bold text-4xl ">Skills</h2>
             <div>
               <h3 class="font-bold">Languages</h3>
               <p>TypeScript, Vue.js, ReactJS, React Native, Nuxt.js, HTML5, JavaScript, CSS, SCSS, SASS, Node.js, WordPress, GraphQL, SQL</p>
@@ -109,7 +113,7 @@
     <div class="w-[33vw] h-full p-4 overflow-scroll">
       <cv-section-education/> 
       <div class="absolute bottom-0 right-0  p-4">
-        <contact-me/>
+        <cv-section-contact-me/>
       </div>
     </div>
   </div>
@@ -138,7 +142,7 @@ const pinTitleChildren = ref(0)
 const pinTitleChildrenTwo = ref(0)
 
 function toggleTitle() {
-  pinTitle.value = !(pinTitle.value)
+  pinTitle.value = true
 
   if(pinTitle.value){
     setTimeout(() => {

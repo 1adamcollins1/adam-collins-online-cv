@@ -20,25 +20,26 @@
         </div>
         <!-- CONTENT -->
         <div class="w-full h-full absolute flex overflow-hidden">
-          <div class="relative w-full h-full flex flex-col px-4 pt-4">
+          <div class="relative w-full h-full flex flex-col p-4">
             <AboutMe
               @click="toggleTitle()"
               :pin-title="pinTitle"
               :pin-title-children="pinTitleChildren"
             />
-            <div class="h-[15%]"></div>
+            <div class="h-[20%]"></div>
             <div 
-              class="h-[40%] text-center flex justify-center items-center flex-col pb-4"
+              class="h-[40%] text-center flex justify-center items-center flex-col pb-12 px-4"
               :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
             >
-              <img src="../public/images/profilepic.png" alt="" class="w-28 h-36 md:w-32 md:h-44">
+              <img src="../public/images/profilepic.png" alt="" class="w-32 h-44">
               <br/>
               <p class=" text-[14px] md:text-[16px]">Front-End Developer skilled in modern frameworks, creating scalable, pixel-perfect web and software applications.</p>
             </div>
-            <div class="h-[45%] w-full flex flex-col justify-between">
+            <div class="h-[40%] w-full flex flex-col justify-between">
               <h2 class="text-[#e4f1fe] font-bold text-4xl ">Experience</h2>
               <h2 class="text-[#e4f1fe] font-bold text-4xl ">Skills</h2>
               <h2 class="text-[#e4f1fe] font-bold text-4xl ">Education</h2>
+              <h2 class="text-[#e4f1fe] font-bold text-4xl ">Contact Me</h2>
             </div>
           </div>
         </div>

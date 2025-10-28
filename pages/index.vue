@@ -12,28 +12,7 @@
       />
     </div>
     <div class="relative h-full w-screen">
-      <div 
-      class="absolute inset-0 p-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-[28%] h-[15%] z-50 flex flex-col justify-between items-center translate-all duration-500"
-        :class="pinTitle ? 'top-[7.5%]' : 'top-1/2', pinTitleChildren ? '' : 'text-[#8dc6ff]'"
-        @click="toggleTitle()"
-      >
-        <p 
-          class="translate-all duration-500 font-medium"
-          :class="pinTitleChildren ? 'text-5xl' : 'text-4xl'"
-        >
-          Adam Collins
-        </p>
-        <div 
-          class="rounded-3xl h-1 bg-[#34495e] translate-[width] duration-500"
-          :class="pinTitleChildren ? 'w-full ' : 'w-0'"
-        />
-        <p 
-          class="text-[0.8rem] translate-all duration-500 text-center"
-          :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
-        >
-          +44 7592738027 | adamcollins31@gmail.com
-        </p>
-      </div>
+      
       <!-- <div class="absolute inset-0  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-80 h-60 z-50 flex justify-center items-center text-2xl">
         <p>Adam Collins</p>
       </div> -->
@@ -73,59 +52,50 @@
       <div class="w-full h-full absolute flex overflow-hidden">
         <div class="relative w-[35%] h-full">
         </div>
-        <div class="relative w-[30%] h-full flex flex-col p-4">
+        <div class="relative w-[30%] h-full flex flex-col px-4 pt-4">
+          <AboutMe
+            @click="toggleTitle()"
+            :pin-title="pinTitle"
+            :pin-title-children="pinTitleChildren"
+          />
           <div class="h-[15%]"></div>
           <div 
-            class="h-fit text-center flex justify-center items-center flex-col pb-4"
+            class="h-[40%] text-center flex justify-center items-center flex-col pb-4"
             :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
           >
-            <img src="../public/images/profilepic.png" alt="" class=" w-32 h-44">
+            <img src="../public/images/profilepic.png" alt="" class="w-28 h-36 md:w-32 md:h-44">
             <br/>
-            <p>Front-End Developer skilled in modern frameworks, creating scalable, pixel-perfect web and software applications.</p>
+            <p class=" text-[14px] md:text-[16px]">Front-End Developer skilled in modern frameworks, creating scalable, pixel-perfect web and software applications.</p>
           </div>
-          <div class="absolute bottom-0 pb-4 flex-1">
-            <div class="absolute top-[-3px] left-0 w-full h-full top-fade transition-all duration-1000"
-              :class="!pinTitleChildrenTwo ? 'translate-y-0' : 'translate-y-full'"
+          <div class="relative flex flex-col bottom-0 w-full h-[45%]">
+            <div class="absolute top-0 left-0 w-full h-[120%] top-fade transition-all duration-1000"
+              :class="!pinTitleChildrenTwo ? 'translate-y-0' : 'translate-y-[120%]'"
             ></div>
-            <h2 class="text-[#e4f1fe] font-bold text-4xl ">Skills</h2>
-            <div>
-              <h3 class="font-bold">Languages</h3>
-              <p>TypeScript, Vue.js, ReactJS, React Native, Nuxt.js, HTML5, JavaScript, CSS, SCSS, SASS, Node.js, WordPress, GraphQL, SQL</p>
-            </div>
-            <div>
-              <h3 class="font-bold">Development</h3>
-              <p>SCRUM, Agile, GitLab Boards, Jira, Project Management, Client Communication, Project Presentation</p>
-            </div>
-            <div>
-              <h3 class="font-bold">Technologies</h3>
-              <p>Docker, Figma, Postman, FileZilla, Siteground, Git CLI, Git Version Control, REST API’s, GitLab management, Fintech</p>
-            </div>
+            <CvSectionSkills/>
           </div>
         </div>
         <div 
           class="h-full w-[35%] p-4 pt-0 overflow-scroll transition-[opacity] duration-500"
           :class="peelRight ? 'opacity-100' : 'opacity-0'"
         >
-          <cv-section-experience/>
+          <CvSectionExperience/>
         </div>
       </div>
     </div>
-    <div class="w-[33vw] h-full p-4 overflow-scroll">
-      <cv-section-education/> 
-      <div class="absolute bottom-0 right-0  p-4">
-        <cv-section-contact-me/>
+    <div class="w-[33vw] h-full p-4 pt-0 overflow-scroll">
+      <CvSectionEducation class=" pb-10 md:pb-0"/> 
+      <div class="absolute w-[33vw] bottom-0 right-0  p-4">
+        <CvSectionContactMe/>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, onBeforeUnmount } from 'vue';
+import { onMounted, onBeforeUnmount } from 'vue'
+import AboutMe from '~/components/cvSection/aboutMe.vue'
 
-import 'vue-peel/style.css'
-
-
-const hideOverlay = ref(0)
+const hideOverlay = ref(false)
 
 // const peekRight = ref(1)
 // const peelRight = ref(1)
@@ -134,43 +104,25 @@ const hideOverlay = ref(0)
 // const pinTitleChildren = ref(1)
 // const pinTitleChildrenTwo = ref(1)
 
-const peekRight = ref(0)
-const peelRight = ref(0)
-const pinTitle = ref(0)
-const shiftCvLeft = ref(0)
-const pinTitleChildren = ref(0)
-const pinTitleChildrenTwo = ref(0)
+const peekRight = ref(false)
+const peelRight = ref(false)
+const pinTitle = ref(false)
+const shiftCvLeft = ref(false)
+const pinTitleChildren = ref(false)
+const pinTitleChildrenTwo = ref(false)
 
 function toggleTitle() {
   pinTitle.value = true
-
-  if(pinTitle.value){
-    setTimeout(() => {
-      pinTitleChildren.value = true
-    }, 300)
-    setTimeout(() => {
-      pinTitleChildrenTwo.value = true
-    }, 600)
-  }
-  else {
-    pinTitleChildren.vlaue = false
-  }
+  setTimeout(() => pinTitleChildren.value = true, 300)
+  setTimeout(() => pinTitleChildrenTwo.value = true, 600)
 }
 
 function revealContent(){
   peelRight.value = true
-  setTimeout(() => {
-      pinTitle.value = true
-  }, 500)
-  setTimeout(() => {
-      pinTitleChildren.value = true
-  }, 1000)
-  setTimeout(() => {
-    pinTitleChildrenTwo.value = true
-  }, 1600)
-  setTimeout(() => {
-    shiftCvLeft.value = true
-  }, 2100)
+  setTimeout(() => { pinTitle.value = true }, 500)
+  setTimeout(() => { pinTitleChildren.value = true }, 1000)
+  setTimeout(() => { pinTitleChildrenTwo.value = true }, 1600)
+  setTimeout(() => { shiftCvLeft.value = true }, 2100)
 }
 
 onMounted(() => {

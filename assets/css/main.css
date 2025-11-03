@@ -16,3 +16,10 @@ body {
     rgba(141, 198, 255, 1) 100%
   );
 }
+
+.text-skill{
+  font-weight: 600;
+}
+.text-skill.highlighted{
+  color: white;
+}

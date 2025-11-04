@@ -66,7 +66,7 @@
               <img src="../public/images/profilepic.png" alt="" class="w-28 h-36 md:w-32 md:h-44">
               <br/>
               <p class=" text-[14px] md:text-[16px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis pellentesque diam, id commodo est. Proin est lacus, faucibus in diam non, accumsan ultricies ex. Integer ut massa ut ipsum imperdiet sodales a tempor odio. Morbi gravida quam a ipsum finibus bibendum. Sed accumsan sem sed massa sagittis viverra. Sed efficitur volutpat mi. Nullam commodo semper orci eu efficitur. Donec non nulla iaculis, malesuada ligula id, pretium diam.
+                Lorem ipsum dolor sit amet!! consectetur adipiscing elit. Morbi mattis pellentesque diam, id commodo est. Proin est lacus, faucibus in diam non, accumsan ultricies ex. Integer ut massa ut ipsum imperdiet sodales a tempor odio. Morbi gravida quam a ipsum finibus bibendum. Sed accumsan sem sed massa sagittis viverra. Sed efficitur volutpat mi. Nullam commodo semper orci eu efficitur. Donec non nulla iaculis, malesuada ligula id, pretium diam.
               </p>
             </div>
           </div>

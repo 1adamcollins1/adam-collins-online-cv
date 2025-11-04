@@ -60,13 +60,17 @@
             />
             <div class="h-[15%]"></div>
             <div 
-              class="h-[70%] text-center flex justify-center items-center flex-col pb-4"
+              class="h-[70%] text-center flex justify-between items-center flex-col pb-4 mx-8 overflow-scroll"
               :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
             >
               <img src="../public/images/profilepic.png" alt="" class="w-28 h-36 md:w-32 md:h-44">
               <br/>
-              <p class=" text-[14px] md:text-[16px]">
-                Lorem ipsum dolor sit amet!! consectetur adipiscing elit. Morbi mattis pellentesque diam, id commodo est. Proin est lacus, faucibus in diam non, accumsan ultricies ex. Integer ut massa ut ipsum imperdiet sodales a tempor odio. Morbi gravida quam a ipsum finibus bibendum. Sed accumsan sem sed massa sagittis viverra. Sed efficitur volutpat mi. Nullam commodo semper orci eu efficitur. Donec non nulla iaculis, malesuada ligula id, pretium diam.
+              <p class=" text-[14px] md:text-[15px]">
+                I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B projects, agency work, start ups, etc. I can easily adapt to diverse work environments.
+              </p>
+              <p class=" text-[14px] md:text-[15px]">
+                With a keen eye for pixel-perfect design and strong technical skills, I take pride in delivering seamless UX. Comfortable with public speaking and presentations, I thrive in fast-paced, AGILE environments. I enjoy bringing ideas to life efficiently and effectively, either by collaborating as a team or working solo.
+
               </p>
             </div>
           </div>

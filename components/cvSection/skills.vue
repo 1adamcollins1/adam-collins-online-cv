@@ -1,4 +1,5 @@
 <template>  
+    <div>
         <h2 class="text-[#e4f1fe] font-bold text-4xl ">Skills</h2>
         <div class="w-full overflow-scroll flex-1 pb-4">
             <h3 class="font-bold">Languages</h3>
@@ -10,4 +11,5 @@
             <h3 class="font-bold">Technologies</h3>
             <p>Docker, Figma, Postman, FileZilla, Siteground, Git CLI, Git Version Control, REST API’s, GitLab management, Fintech</p>
         </div>
+    </div>
 </template>

@@ -79,9 +79,9 @@
         </div>
       </div>
       <div class="w-[33vw] h-full p-4 pt-0 overflow-scroll">
-        <CvSectionEducation class=" pb-10 md:pb-0"/> 
-        <CvSectionSkills/>
-        <div class="absolute w-[33vw] bottom-0 right-0  p-4">
+        <CvSectionEducation/> 
+        <CvSectionSkills class="pb-10"/>
+        <div class="absolute bg-[#8dc6ff] w-[33vw] bottom-0 right-0  p-4">
           <CvSectionContactMe/>
         </div>
       </div>

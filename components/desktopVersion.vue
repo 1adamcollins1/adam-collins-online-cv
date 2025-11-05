@@ -7,7 +7,7 @@
         @click="revealContent()"
       >
         <Icon 
-          name="mdi:play" 
+          name="ic:round-play-arrow" 
           class="text-white  text-5xl "
         />
       </div>
@@ -75,19 +75,32 @@
             </div>
           </div>
           <div 
-            class="h-full w-[35%] p-4 pt-0 overflow-scroll transition-[opacity] duration-500"
+            class="h-full w-[35%] px-4 overflow-scroll transition-[opacity] duration-500"
             :class="peelRight ? 'opacity-100' : 'opacity-0'"
           >
             <CvSectionExperience/>
           </div>
         </div>
       </div>
-      <div class="w-[33vw] h-full p-4 pt-0 overflow-scroll">
-        <CvSectionEducation/> 
-        <CvSectionSkills class="pb-10"/>
-        <div class="absolute bg-[#8dc6ff] w-[33vw] bottom-0 right-0  p-4">
-          <CvSectionContactMe/>
+      <div 
+        class="w-[33vw] h-full p-4 pt-0"
+      >
+        <div 
+          ref="rightCont"
+          class="w-full h-[95%] overflow-scroll"
+          @scroll="handleLineUpScroll()"
+        >
+          <Icon
+              v-if="showArrow"
+              name="ic:round-keyboard-arrow-down" 
+              class="text-[#22313f] absolute bottom-[5%] right-1 text-5xl"
+          />
+          <CvSectionEducation/> 
+          <CvSectionSkills/>
         </div>
+        <CvSectionContactMe
+          class="flex-1 pt-2" 
+        />
       </div>
     </div>
   </template>
@@ -111,6 +124,8 @@
   const shiftCvLeft = ref(false)
   const pinTitleChildren = ref(false)
   const pinTitleChildrenTwo = ref(false)
+  const rightCont = ref()
+  const showArrow = ref(true)
   
   function toggleTitle() {
     pinTitle.value = true
@@ -124,6 +139,20 @@
     setTimeout(() => { pinTitleChildren.value = true }, 1000)
     setTimeout(() => { pinTitleChildrenTwo.value = true }, 1600)
     setTimeout(() => { shiftCvLeft.value = true }, 2100)
+  }
+
+  function handleLineUpScroll() {
+      const el = (rightCont.value) 
+      const scrollTop = el.scrollTop
+      const scrollHeight = el.scrollHeight
+      const clientHeight = el.clientHeight
+
+      if (scrollTop + clientHeight + 10 >= scrollHeight) {
+          showArrow.value = false
+      }
+      else{
+          showArrow.value = true
+      }
   }
   
   onMounted(() => {

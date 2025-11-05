@@ -1,5 +1,15 @@
 <template>   
-    <section v-bind="$attrs">
+    <div 
+        v-bind="$attrs"
+        ref="educationCont"
+        class="h-full overflow-scroll"
+        @scroll="handleLineUpScroll()"
+    >
+        <Icon
+            v-if="showArrow"
+            name="ic:round-keyboard-arrow-down" 
+            class="text-[#22313f] absolute bottom-1 right-1 text-5xl"
+        />
         <h2 class="py-4 sticky top-0 bg-[#8dc6ff] text-[#e4f1fe] font-bold text-4xl z-10">Experience</h2>
         <h3 class="font-bold">Front-End Developer</h3>
         <p >Urban Zoo</p>
@@ -51,15 +61,31 @@
             <li>Tech stack was mostly <span class="text-skill" :class="{ highlighted: isHighlighted('projectManagement') }">PHP</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('projectManagement') }">Laravel</span>.</li> 
         </ul>
         <br/>
-    </section>
+    </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 
-const highlightedSkill = ref('nuxtjs')
+const highlightedSkill = ref()
+const educationCont = ref()
+const showArrow = ref(true)
 
 function isHighlighted(skill) {
   return highlightedSkill.value === skill
+}
+
+function handleLineUpScroll() {
+    const el = (educationCont.value) 
+    const scrollTop = el.scrollTop
+    const scrollHeight = el.scrollHeight
+    const clientHeight = el.clientHeight
+
+    if (scrollTop + clientHeight + 30 >= scrollHeight) {
+        showArrow.value = false
+    }
+    else{
+        showArrow.value = true
+    }
 }
 </script>

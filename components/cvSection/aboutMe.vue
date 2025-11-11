@@ -1,6 +1,6 @@
 <template>   
     <div 
-        class="absolute inset-0 p-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-[15%] z-50 flex flex-col justify-between items-center translate-all duration-500"
+        class="absolute inset-0 p-4 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-full h-[15%] flex flex-col justify-between items-center translate-all duration-500"
         :class="[
             pinTitle ? 'top-[7.5%]' : 'top-1/2',
             pinTitleChildren ? '' : 'text-[#8dc6ff]'

@@ -57,6 +57,7 @@
               @click="toggleTitle()"
               :pin-title="pinTitle"
               :pin-title-children="pinTitleChildren"
+              class="z-40"
             />
             <div class="h-[15%]"></div>
             <div 
@@ -70,7 +71,6 @@
               </p>
               <p class=" text-[14px] md:text-[15px]">
                 With a keen eye for pixel-perfect design and strong technical skills, I take pride in delivering seamless UX. Comfortable with public speaking and presentations, I thrive in fast-paced, AGILE environments. I enjoy bringing ideas to life efficiently and effectively, either by collaborating as a team or working solo.
-
               </p>
             </div>
           </div>

@@ -9,7 +9,7 @@
         </div> -->
         <!-- OVERLAY -->
         <div 
-          class="w-full h-full absolute flex z-20 pointer-events-none text-black overflow-hidden"
+          class="w-full h-full absolute flex z-40 pointer-events-none text-black overflow-hidden"
           :class="{'hidden' : hideOverlay}"
         >
           <div 
@@ -25,22 +25,49 @@
               @click="toggleTitle()"
               :pin-title="pinTitle"
               :pin-title-children="pinTitleChildren"
+              :class="pinTitleChildren ? 'z-20' : 'z-40'"
             />
             <div class="h-[20%]"></div>
             <div 
-              class="h-[40%] text-center flex justify-center items-center flex-col pb-12 px-4"
+              class="h-[60%] text-center flex justify-center items-center flex-col pb-12 px-4"
               :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
             >
               <img src="../public/images/profilepic.png" alt="" class="w-32 h-44">
               <br/>
-              <p class=" text-[14px] md:text-[16px]">Front-End Developer skilled in modern frameworks, creating scalable, pixel-perfect web and software applications.</p>
+              <p class=" text-[14px] md:text-[15px]">
+                I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B projects, agency work, start ups, etc. I can easily adapt to diverse work environments.
+              </p>
             </div>
-            <div class="h-[40%] w-full flex flex-col justify-between">
-              <h2 class="text-[#e4f1fe] font-bold text-4xl ">Experience</h2>
-              <h2 class="text-[#e4f1fe] font-bold text-4xl ">Skills</h2>
-              <h2 class="text-[#e4f1fe] font-bold text-4xl ">Education</h2>
-              <h2 class="text-[#e4f1fe] font-bold text-4xl ">Contact Me</h2>
-            </div>
+          </div>
+          <div class="absolute z-30 h-full w-full flex flex-col-reverse p-4">
+            <p 
+              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
+              :class="activeSection === 'contactMe' ? 'h-[70%]' : 'h-[5%]'"
+              @click="activeSection === 'contactMe' ? activeSection= '' : activeSection= 'contactMe'"
+            >
+            Contact Me
+          </p>
+            <p 
+              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
+              :class="activeSection === 'education' ? 'h-[70%]' : 'h-[5%]'"
+              @click="activeSection === 'education' ? activeSection= '' : activeSection= 'education'"
+            >
+              Education
+            </p>
+            <p 
+              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
+              :class="activeSection === 'skills' ? 'h-[70%]' : 'h-[5%]'"
+              @click="activeSection === 'skills' ? activeSection= '' : activeSection= 'skills'"
+            >
+              Skills
+            </p>
+            <p 
+              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff]"
+              :class="activeSection === 'experience' ? 'h-[70%]' : 'h-[5%]'"
+              @click="activeSection === 'experience' ? activeSection= '' : activeSection= 'experience'"
+            >
+              Experience
+            </p>
           </div>
         </div>
       </div>
@@ -53,26 +80,20 @@
   
   const hideOverlay = ref(false)
   
-  // const peekRight = ref(1)
-  // const peelRight = ref(1)
-  // const pinTitle = ref(1)
-  // const shiftCvLeft = ref(1)
-  // const pinTitleChildren = ref(1)
-  // const pinTitleChildrenTwo = ref(1)
-  
   const peekRight = ref(false)
   const peelRight = ref(false)
   const pinTitle = ref(false)
   const shiftCvLeft = ref(false)
   const pinTitleChildren = ref(false)
   const pinTitleChildrenTwo = ref(false)
+  const activeSection = ref(false)
   
   function toggleTitle() {
     pinTitle.value = true
     setTimeout(() => pinTitleChildren.value = true, 300)
     setTimeout(() => pinTitleChildrenTwo.value = true, 600)
   }
-  
+
   function revealContent(){
     peelRight.value = true
     setTimeout(() => { pinTitle.value = true }, 500)

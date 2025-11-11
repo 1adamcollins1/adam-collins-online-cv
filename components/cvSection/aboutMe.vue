@@ -7,8 +7,8 @@
         ]"
     >
         <p 
-            class="translate-all duration-500 font-medium"
-            :class="pinTitleChildren ? 'lg:text-5xl md:text-4xl text-3xl' : 'lg:text-4xl md:text-3xl text-2xl'"
+            class="translate-all duration-500 font-bold md:font-medium"
+            :class="pinTitleChildren ? 'lg:text-5xl md:text-4xl text-4xl' : 'lg:text-4xl md:text-3xl text-3xl'"
         >
             Adam Collins
         </p>

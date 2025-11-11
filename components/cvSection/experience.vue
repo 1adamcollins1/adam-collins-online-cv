@@ -5,12 +5,15 @@
         class="h-full overflow-scroll"
         @scroll="handleLineUpScroll()"
     >
-        <Icon
+        <!-- <Icon
             v-if="showArrow"
             name="ic:round-keyboard-arrow-down" 
             class="text-[#22313f] absolute bottom-1 right-1 text-5xl"
-        />
-        <h2 class="py-4 sticky top-0 bg-[#8dc6ff] text-[#e4f1fe] font-bold text-4xl z-10">Experience</h2>
+        /> -->
+        <h2 
+            v-if="!hideHeader" 
+            class="py-4 sticky top-0 bg-[#8dc6ff] text-[#e4f1fe] font-bold text-4xl z-10"
+        >Experience</h2>
         <h3 class="font-bold">Front-End Developer</h3>
         <p >Urban Zoo</p>
         <p >Apr. 2025 – Oct. 2025 | <span class="italic">Warrington, UK</span></p>
@@ -64,14 +67,19 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+interface Props {
+    hideHeader?: boolean
+}
+
+defineProps<Props>()
 import { ref } from 'vue'
 
 const highlightedSkill = ref()
 const educationCont = ref()
 const showArrow = ref(true)
 
-function isHighlighted(skill) {
+function isHighlighted(skill: any) {
   return highlightedSkill.value === skill
 }
 

@@ -2,7 +2,12 @@
     <div class="flex flex-col flex-wrap gap-2 items-end">
         <!-- <p class="bg-[#22313f] text-[#e4f1fe] px-3 rounded-sm right-0 w-fit">adamcollins31@gmail.com</p> -->
         <div class="social-icons align-middle" style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
-            <p class="hidden lg:block lg:text-2xl pb-0 h-fit">Contact me:</p>
+            <p 
+                class="hidden lg:block lg:text-2xl pb-0 h-fit"
+                v-if="!hideHeader"
+            >
+                Contact me:
+            </p>
             <a href="https://www.linkedin.com/in/adam-collins-b32196125/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; padding: 8px; background: rgba(34, 49, 63, 1); border-radius: 8px; color: #e4f1fe; text-decoration: none;" >
                 <svg class="niftybutton-linkedin" data-donate="true" data-tag="lin" data-name="LinkedIn" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="40px" height="40px" style="width: 40px; height: 40px; display: block; fill: #e4f1fe;"><title>LinkedIn social icon</title>
                     <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z" fill="#e4f1fe"></path>
@@ -38,20 +43,26 @@
     </div>
 </template>
 
-<script setup>
-const copyEmailText = ref('Click to copy email')
-const copyPhoneText = ref('Click to copy phone number')
+<script setup lang="ts">
+    interface Props {
+        hideHeader?: boolean
+    }
 
-function copyOnClick(copyType) {
-    const toCopy = (copyType == 'email') ? 'adamcollins31@gmail.com' : '+44 7592738027'
-    navigator.clipboard.writeText(toCopy)
-        .then(() => {
-            (copyType == 'email') ? copyEmailText.value = 'Copied!' : copyPhoneText.value = 'Copied!'
-        })
-        .catch(err => {
-        console.error("Failed to copy email: ", err);
-        });
-}
+    defineProps<Props>()
+
+    const copyEmailText = ref('Click to copy email')
+    const copyPhoneText = ref('Click to copy phone number')
+
+    function copyOnClick(copyType: string) {
+        const toCopy = (copyType == 'email') ? 'adamcollins31@gmail.com' : '+44 7592738027'
+        navigator.clipboard.writeText(toCopy)
+            .then(() => {
+                (copyType == 'email') ? copyEmailText.value = 'Copied!' : copyPhoneText.value = 'Copied!'
+            })
+            .catch(err => {
+            console.error("Failed to copy email: ", err);
+            });
+    }
 </script>
 
 <style scoped>

@@ -40,41 +40,58 @@
             </div>
           </div>
           <div class="absolute z-30 h-full w-full flex flex-col-reverse p-4">
-            <p 
-              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
-              :class="activeSection === 'contactMe' ? 'h-[70%]' : 'h-[5%]'"
-              @click="activeSection === 'contactMe' ? activeSection= '' : activeSection= 'contactMe'"
+            <div 
+              class="text-[#e4f1fe] transition-[height] duration-500 overflow-hidden bg-[#8dc6ff] flex flex-col"
+              :class="activeSection === 'education' ? 'h-[75%]' : 'h-[5%]'"
             >
-            Contact Me
-          </p>
-            <p 
-              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
-              :class="activeSection === 'education' ? 'h-[70%]' : 'h-[5%]'"
-              @click="activeSection === 'education' ? activeSection= '' : activeSection= 'education'"
+              <h2 
+                class="w-full text-2xl font-bold"
+                @click="activeSection === 'education' ? activeSection= '' : activeSection= 'education'"
+              >
+                Education
+              </h2>
+              <CvSectionEducation
+                hide-header
+                class="transition-opacity duration-500 text-black text-[15px]"
+              />
+            </div>
+            <div 
+              class="text-[#e4f1fe] transition-[height] duration-500 overflow-hidden bg-[#8dc6ff] flex flex-col"
+              :class="activeSection === 'experience' ? 'h-[75%]' : 'h-[5%]'"
             >
-              Education
-            </p>
-            <p 
-              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff] h-[5%]"
-              :class="activeSection === 'skills' ? 'h-[70%]' : 'h-[5%]'"
-              @click="activeSection === 'skills' ? activeSection= '' : activeSection= 'skills'"
+              <h2 
+                class="w-full text-2xl font-bold"
+                @click="activeSection === 'experience' ? activeSection= '' : activeSection= 'experience'"
+              >
+                Experience
+              </h2>
+              <CvSectionExperience
+                hide-header
+                class="transition-opacity duration-500 text-black text-[15px]"
+              />
+            </div>
+            <div 
+              class="text-[#e4f1fe] transition-[height] duration-500 overflow-hidden bg-[#8dc6ff] flex flex-col"
+              :class="activeSection === 'skills' ? 'h-[75%]' : 'h-[5%]'"
             >
-              Skills
-            </p>
-            <p 
-              class="text-[#e4f1fe] font-bold transition-[height] duration-500 text-2xl bg-[#8dc6ff]"
-              :class="activeSection === 'experience' ? 'h-[70%]' : 'h-[5%]'"
-              @click="activeSection === 'experience' ? activeSection= '' : activeSection= 'experience'"
-            >
-              Experience
-            </p>
+              <h2 
+                class="w-full text-2xl font-bold"
+                @click="activeSection === 'skills' ? activeSection= '' : activeSection= 'skills'"
+              >
+                Skills
+              </h2>
+              <CvSectionSkills
+                hide-header
+                class="transition-opacity duration-500 text-black text-[15px]"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   </template>
   
-  <script setup>
+<script setup>
   import { onMounted, onBeforeUnmount } from 'vue'
   import AboutMe from '~/components/cvSection/aboutMe.vue'
   
@@ -107,5 +124,5 @@
   
   onBeforeUnmount(() => {
   })
-  </script>
+</script>
   

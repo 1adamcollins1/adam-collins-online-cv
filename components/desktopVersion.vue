@@ -90,11 +90,6 @@
           class="w-full h-[95%] overflow-scroll"
           @scroll="handleLineUpScroll()"
         >
-          <Icon
-              v-if="showArrow"
-              name="ic:round-keyboard-arrow-down" 
-              class="text-[#22313f] absolute bottom-[5%] right-1 text-5xl"
-          />
           <CvSectionEducation/> 
           <CvSectionSkills/>
         </div>
@@ -105,7 +100,7 @@
     </div>
   </template>
   
-  <script setup>
+<script setup>
   import { onMounted, onBeforeUnmount } from 'vue'
   import AboutMe from '~/components/cvSection/aboutMe.vue'
   
@@ -160,5 +155,5 @@
   
   onBeforeUnmount(() => {
   })
-  </script>
+</script>
   

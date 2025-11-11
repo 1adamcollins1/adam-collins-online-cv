@@ -41,12 +41,12 @@
         </div>
         <div class="absolute z-30 h-full w-full flex flex-col-reverse">
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[33] flex flex-col"
-            :class="activeSection === 'education' ? 'h-[72%]' : 'h-[8%]'"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[33]"
+            :class="activeSection === 'education' ? 'h-[70%]' : 'h-[9%]'"
           >
-            <div class="pl-10 box-border border-b-4">
+            <div class="pl-10 box-border">
               <h2
-                class="relative w-fit bg-[#8dc6ff] px-3 text-3xl rounded-t-sm font-bold border-4 border-b-[#8dc6ff] box-border translate-y-[4px]"
+                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border"
                 @click="activeSection === 'education' ? activeSection= '' : activeSection= 'education'"
               >
                 Education
@@ -54,35 +54,35 @@
             </div>
             <CvSectionEducation
               hide-header
-              class="flex-1 bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4"
+              class="h-dvh bg-[#65adf5] transition-opacity duration-500 text-black text-[15px] p-4"
             />
           </div>
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[32] flex flex-col"
-            :class="activeSection === 'experience' ? 'h-[72%]' : 'h-[8%]'"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[32]"
+            :class="activeSection === 'experience' ? 'h-[65%]' : 'h-[6%]'"
           >
-            <div class="pl-6 box-border border-b-4">
+            <div class="pl-6 box-border">
               <h2
-                class="relative w-fit bg-[#8dc6ff] px-3 text-3xl rounded-t-sm font-bold border-4 border-b-[#8dc6ff] box-border translate-y-[4px]"
+                class="relative w-fit bg-[#8dc6ff] px-3 text-2xl rounded-t-md font-bold box-border"
                 @click="activeSection === 'experience' ? activeSection= '' : activeSection= 'experience'"
               >
                 Experience
               </h2>
             </div>
 
-            <div class=" bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4">
+            <div class="h-dvh pb-[40dvh] overflow-scroll bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4">
               <CvSectionExperience
                 hide-header
               />
             </div>
           </div>
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[31] flex flex-col"
-            :class="activeSection === 'skills' ? 'h-[72%]' : 'h-[8%]'"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[31]"
+            :class="activeSection === 'skills' ? 'h-[60%]' : 'h-[6%]'"
           >
-            <div class="pl-2 box-border border-b-4">
+            <div class="pl-2 box-border">
               <h2
-                class="relative w-fit bg-[#8dc6ff] px-3 text-3xl rounded-t-sm font-bold border-4 border-b-[#8dc6ff] box-border translate-y-[4px]"
+                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border"
                 @click="activeSection === 'skills' ? activeSection= '' : activeSection= 'skills'"
               >
                 Skills
@@ -90,7 +90,7 @@
             </div>
             <CvSectionSkills
               hide-header
-              class="flex-1 bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4"
+              class="h-dvh bg-[#65adf5] transition-opacity duration-500 text-black text-[15px] p-4"
             />
           </div>
         </div>

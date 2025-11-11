@@ -34,8 +34,8 @@
           >
             <img src="../public/images/profilepic.png" alt="" class="w-32 h-44">
             <br/>
-            <p class=" text-[14px] md:text-[15px]">
-              I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B projects, agency work, start ups, etc. I can easily adapt to diverse work environments.
+            <p class=" text-[15px] md:text-[16px]">
+              I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B, agency work, start ups and more. 
             </p>
           </div>
         </div>

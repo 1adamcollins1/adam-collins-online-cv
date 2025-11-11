@@ -70,10 +70,11 @@
               </h2>
             </div>
 
-            <CvSectionExperience
-              hide-header
-              class="transition-opacity flex-1 bg-[#8dc6ff] duration-500 text-black text-[15px] p-4"
-            />
+            <div class=" bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4">
+              <CvSectionExperience
+                hide-header
+              />
+            </div>
           </div>
           <div 
             class="relative text-[#e4f1fe] transition-[height] duration-500 z-[31] flex flex-col"

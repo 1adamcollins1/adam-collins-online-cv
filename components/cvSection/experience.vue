@@ -2,7 +2,7 @@
     <div 
         v-bind="$attrs"
         ref="educationCont"
-        class="h-full overflow-scroll"
+        class="h-fit md:h-full overflow-scroll"
         @scroll="handleLineUpScroll()"
     >
         <!-- <Icon

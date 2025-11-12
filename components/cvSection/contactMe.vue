@@ -15,6 +15,7 @@
             </a>
             <div class="tooltip-container">
                 <a 
+                id="CopyEmailButton"
                 href="#"
                 @click.prevent="copyOnClick('email')"
                 @mouseenter="copyEmailText = 'Click to copy email'"
@@ -29,6 +30,7 @@
             <div class="tooltip-container">
                 <a 
                 href="#"
+                id="CopyPhoneButton"
                 @click.prevent="copyOnClick('phone')"
                 @mouseenter="copyPhoneText = 'Click to copy phone number'"
                 class="copy-btn"

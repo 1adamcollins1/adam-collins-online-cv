@@ -12,7 +12,7 @@
             <p>SCRUM, Agile, GitLab Boards, Jira, Project Management, Client Communication, Project Presentation</p>
         
             <h3 class="font-bold">Technologies</h3>
-            <p>Docker, Figma, Postman, FileZilla, Siteground, Git CLI, Github, REST API’s, GitLab management, Fintech</p>
+            <p>Docker, Figma, Postman, FileZilla, Siteground, Git CLI, Github, REST API’s, GitLab management, Fintech, Pinia, Expo</p>
         </div>
     </div>
 </template>

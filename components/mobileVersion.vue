@@ -25,7 +25,7 @@
             @click="toggleTitle()"
             :pin-title="pinTitle"
             :pin-title-children="pinTitleChildren"
-            class="h-[15%]"
+            class="h-[18%]"
             :class="pinTitleChildren ? 'z-20' : 'z-40'"
           />
           <div class="h-[20%]"></div>
@@ -34,7 +34,6 @@
             :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
           >
             <img src="../public/images/profilepic.png" alt="" class="w-32 h-44">
-            <br/>
             <p class="text-[17px]">
               I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B, agency work, start ups and more. 
             </p>

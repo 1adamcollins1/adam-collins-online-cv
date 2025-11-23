@@ -29,7 +29,6 @@
             :pin-title="pinTitle"
             :pin-title-children="pinTitleChildren"
             class="h-[18%]"
-            :class="pinTitleChildren ? 'z-20' : 'z-40'"
           />
           <div class="h-[20%]"></div>
           <div 

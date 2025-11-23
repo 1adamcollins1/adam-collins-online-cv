@@ -2,7 +2,7 @@
   <div class="h-dvh w-screen relative flex flex-row transition-all duration-500"
     :class="shiftCvLeft ? 'left-[-33.3%]' : 'left-0'"
   >
-    <div class="relative h-full w-screen">
+    <div class="relative h-full w-screen portrait:flex landscape:hidden">
       
       <!-- <div class="absolute inset-0  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-80 h-60 z-50 flex justify-center items-center text-2xl">
         <p>Adam Collins</p>
@@ -103,6 +103,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="portrait:hidden landscape:flex w-full h-full text-center justify-center">
+      <p class="text-[#e4f1fe] font-bold text-4xl h-fit m-auto">Please rotate your phone!</p>
     </div>
   </div>
 </template>

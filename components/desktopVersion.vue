@@ -53,15 +53,15 @@
           <div class="relative w-[35%] h-full">
           </div>
           <div class="relative w-[30%] h-full flex flex-col px-4 pt-4">
-            <AboutMe
+            <CvSectionAboutMe
               @click="toggleTitle()"
               :pin-title="pinTitle"
               :pin-title-children="pinTitleChildren"
-              class="z-40"
+              class="z-40 h-[16%]"
             />
             <div class="h-[15%]"></div>
             <div 
-              class="h-[70%] text-center flex justify-between items-center flex-col pb-4 mx-8 overflow-scroll"
+              class="flex-1 text-center flex items-center flex-col pb-4 mx-8 overflow-scroll"
               :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
             >
               <img src="../public/images/profilepic.png" alt="" class="w-28 h-36 md:w-32 md:h-44">
@@ -102,7 +102,6 @@
   
 <script setup>
   import { onMounted, onBeforeUnmount } from 'vue'
-  import AboutMe from '~/components/cvSection/aboutMe.vue'
   
   const hideOverlay = ref(false)
   

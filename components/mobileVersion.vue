@@ -21,10 +21,11 @@
       <!-- CONTENT -->
       <div class="w-full h-full absolute flex overflow-hidden">
         <div class="relative w-full h-full flex flex-col p-4">
-          <AboutMe
+          <CvSectionAboutMe
             @click="toggleTitle()"
             :pin-title="pinTitle"
             :pin-title-children="pinTitleChildren"
+            class="h-[15%]"
             :class="pinTitleChildren ? 'z-20' : 'z-40'"
           />
           <div class="h-[20%]"></div>
@@ -109,7 +110,6 @@
 
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
-import AboutMe from '~/components/cvSection/aboutMe.vue'
 
 const hideOverlay = ref(false)
 

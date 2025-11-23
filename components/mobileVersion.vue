@@ -1,6 +1,9 @@
 <template>
-  <div class="h-dvh w-screen relative flex flex-row transition-all duration-500"
-    :class="shiftCvLeft ? 'left-[-33.3%]' : 'left-0'"
+  <div 
+    class="h-dvh w-screen relative flex flex-row transition-all duration-1000"
+    :class="[
+      loaded ? 'opacity-100' : 'opacity-0'
+    ]"
   >
     <div class="relative h-full w-screen portrait:flex landscape:hidden">
       
@@ -119,6 +122,7 @@ const pinTitle = ref(true)
 const pinTitleChildren = ref(true)
 const pinTitleChildrenTwo = ref(true)
 const activeSection = ref('')
+const loaded = ref(false)
 
 function toggleTitle() {
   pinTitle.value = true
@@ -127,6 +131,7 @@ function toggleTitle() {
 }
 
 onMounted(() => {
+  loaded.value = true
 })
 
 onBeforeUnmount(() => {

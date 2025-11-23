@@ -20,7 +20,7 @@
         <ul class="list-disc pl-5">
             <li>Worked on an in-house CMS, creating websites for 30+ clients using <span class="text-skill" :class="{ highlighted: isHighlighted('nuxtJS') }">Nuxt.js</span> <span class="text-skill" :class="{ highlighted: isHighlighted('vueJS') }">(Vue.js)</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('tailwind') }">Tailwind</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('typescript') }">TypeScript</span>.</li>
             <li>Worked closely with Design and Back-End, taking complex <span class="text-skill" :class="{ highlighted: isHighlighted('figma') }">Figma designs</span>, creating <span class="text-skill" :class="{ highlighted: isHighlighted('restAPIs') }">REST API’s</span> and transforming data to make web-pages and re-usable components.</li> 
-            <li>Led Front-End delivery for major projects such as National Leagues new live match centrer and site re-brands.</li> 
+            <li>Led Front-End delivery for major projects such as National Leagues new live match center and site re-brands.</li> 
             <li>Worked in a fast-paced agile team, managing <span class="text-skill" :class="{ highlighted: isHighlighted('jira') }">Jira tickets</span> and urgent client requests.</li> 
         </ul>
         <br/>
@@ -56,7 +56,7 @@
         <br/>
 
         <h3 class="font-bold">Full-stack Developer</h3>
-        <p >Macro 4</p>
+        <p >Beautiful Canoe</p>
         <p >Jun. 2019 – Aug. 2019 | <span class="italic">Birmingham, UK</span></p>
         <ul class="list-disc pl-5">
             <li>A three month placement as a full stack developer and project manager.</li>

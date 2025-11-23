@@ -34,14 +34,14 @@
           >
             <img src="../public/images/profilepic.png" alt="" class="w-32 h-44">
             <br/>
-            <p class=" text-[15px] md:text-[16px]">
+            <p class="text-[17px]">
               I am a personable Front-End Developer with over 5 years of experience building modern, scalable web and mobile applications. I have contributed to all stages of development from concept and testing to final delivery, providing value across the board. From B2B, agency work, start ups and more. 
             </p>
           </div>
         </div>
-        <div class="absolute z-30 h-full w-full flex flex-col-reverse">
+        <div class="absolute pointer-events-none z-30 h-full w-full flex flex-col-reverse">
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[33]"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[33] pointer-events-auto"
             :class="activeSection === 'education' ? 'h-[70%]' : 'h-[7%]'"
           >
             <div class="pl-20 box-border">
@@ -52,7 +52,7 @@
                 Education
               </h2>
             </div>
-            <div class="h-dvh bg-[#65adf5] transition-opacity duration-500 text-black text-[15px] p-4">
+            <div class="h-dvh pb-[35dvh] overflow-scroll bg-[#65adf5] transition-opacity duration-500 text-black text-[17px] p-4">
               <CvSectionEducation
                 hide-header
                 class="transition-opacity duration-500"
@@ -61,7 +61,7 @@
             </div>
           </div>
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[32]"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[32] pointer-events-auto"
             :class="activeSection === 'experience' ? 'h-[65%]' : 'h-[5.5%]'"
           >
             <div class="pl-10 box-border">
@@ -73,7 +73,7 @@
               </h2>
             </div>
 
-            <div class="h-dvh pb-[40dvh] overflow-scroll bg-[#8dc6ff] transition-opacity duration-500 text-black text-[15px] p-4">
+            <div class="h-dvh pb-[40dvh] overflow-scroll bg-[#8dc6ff] transition-opacity duration-500 text-black text-[17px] p-4">
               <CvSectionExperience
                 hide-header
                 class="transition-opacity duration-500"
@@ -82,7 +82,7 @@
             </div>
           </div>
           <div 
-            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[31]"
+            class="relative text-[#e4f1fe] transition-[height] duration-500 z-[31] pointer-events-auto"
             :class="activeSection === 'skills' ? 'h-[55%]' : 'h-[5.5%]'"
           >
             <div class="pl-2 box-border">
@@ -93,7 +93,7 @@
                 Skills
               </h2>
             </div>
-            <div class="h-dvh bg-[#65adf5] transition-opacity duration-500 text-black text-[15px] p-4">
+            <div class="h-dvh bg-[#65adf5] overflow-scroll transition-opacity duration-500 text-black text-[17px] p-4">
               <CvSectionSkills
                 hide-header
                 class="transition-opacity duration-500"

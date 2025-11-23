@@ -22,6 +22,12 @@
         >
             +44 7592738027 | adamcollins31@gmail.com
         </p>
+        <p 
+            class="text-[0.8rem] translate-all duration-500 text-center"
+            :class="pinTitleChildren ? 'opacity-100' : 'opacity-0'"
+        >
+            Manchester | <a target="_blank" href="https://www.linkedin.com/in/adam-collins-b32196125">LinkedIn</a>
+        </p>
     </div>
 </template>
 

@@ -23,3 +23,15 @@ body {
 .text-skill.highlighted{
   color: white;
 }
+
+* {
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html, body, * {
+  -ms-overflow-style: none;  /* IE/Edge legacy */
+  overflow: -moz-scrollbars-none;
+}

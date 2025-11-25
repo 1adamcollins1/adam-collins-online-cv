@@ -7,8 +7,7 @@
             Education
         </h2>
         <h3 class="font-bold">BSc (Hons): Computer Science with Multimedia</h3>
-        <p >Aston University</p>
-        <p >2017 – 2021 | <span class="italic">Birmingham, UK</span></p>
+        <p >2017 – 2021 | Aston University | <span class="italic">Birmingham, UK</span></p>
         <ul class="list-disc pl-5">
             <li>Graded a 2.1.</li>
             <li>Achieved highly in a broard range of modules such as Multimedia Implementation, Graphical Information Systems, Artificial Intelligence Fundamentals, Database Management, Computer Animation and Cyber Security.</li> 

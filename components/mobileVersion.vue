@@ -95,7 +95,7 @@
                 Skills
               </h2>
             </div>
-            <div class="h-dvh bg-[#65adf5] overflow-scroll transition-opacity duration-500 text-black text-[17px] p-4">
+            <div class="h-dvh pb-[50dvh] overflow-scroll bg-[#65adf5] transition-opacity duration-500 text-black text-[17px] p-4">
               <CvSectionSkills
                 hide-header
                 class="transition-opacity duration-500"

@@ -31,6 +31,8 @@
         <ul class="list-disc pl-5">
             <li>Client-facing role creating websites, web applications and mobile apps in a self-driven work environment.</li>
             <li>Broad Front-End tech stack including <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('vueJS') }">Vue.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('nuxtJS') }">Nuxt.JS</span>, and <span class="text-skill" :class="{ highlighted: isHighlighted('tailwind') }">WordPress</span>.</li> 
+            <li>Managed website deployments using <span class="text-skill" :class="{ highlighted: isHighlighted('githubActions') }">GitHub Actions</span> to services such as Cloudflair </li>
+            <li>Released apps on the <span class="text-skill" :class="{ highlighted: isHighlighted('appStore') }">App Store</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">Google Play</span>, packaged using <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">Expo</span>.</li>
             <li>The principal developer and <span class="text-skill" :class="{ highlighted: isHighlighted('projectManagement') }">point of contact</span> for the client for the development of a web application used by council members, electoral candidates and the civil service for the last Police and Crime Commissioner election.</li> 
         </ul>
         <br/>

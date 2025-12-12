@@ -3,7 +3,7 @@
       :class="shiftCvLeft ? 'left-[-33.3%]' : 'left-0'"
     >
       <div 
-        class="flex absolute bottom-4 left-4 bg-[#8dc6ff] h-10 w-10 rounded-full z-50 items-center justify-center"
+        class="flex absolute bottom-4 left-4 bg-[#8dc6ff] h-10 w-10 rounded-full z-50 items-center justify-center cursor-pointer"
         @click="revealContent()"
       >
         <Icon 
@@ -23,13 +23,13 @@
         >
           <div 
             class="absolute right-0 w-20 h-full pointer-events-auto"
-            :class="[peelRight ? 'pointer-events-none' : '']" 
+            :class="[peelRight ? 'pointer-events-none' : 'cursor-pointer']" 
             @mouseover="peekRight=true" 
             @mouseleave="peekRight=false" 
             @click="peelRight = !peelRight"
           ></div> 
           <div 
-            class="w-[35%] h-full bg-[#34495e] pointer-events-auto"
+            class="w-[35%] h-full bg-[#34495e] pointer-events-auto cursor-pointer"
             @click="shiftCvLeft = !shiftCvLeft"
           >
           </div>
@@ -132,7 +132,7 @@
     setTimeout(() => { pinTitle.value = true }, 500)
     setTimeout(() => { pinTitleChildren.value = true }, 1000)
     setTimeout(() => { pinTitleChildrenTwo.value = true }, 1600)
-    setTimeout(() => { shiftCvLeft.value = true }, 2100)
+    setTimeout(() => { shiftCvLeft.value = true }, 1600)
   }
 
   function handleLineUpScroll() {

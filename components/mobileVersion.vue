@@ -48,7 +48,7 @@
           >
             <div class="pl-20 box-border">
               <h2
-                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border"
+                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border cursor-pointer"
                 @click="activeSection === 'education' ? activeSection= '' : activeSection= 'education'"
               >
                 Education
@@ -68,7 +68,7 @@
           >
             <div class="pl-10 box-border">
               <h2
-                class="relative w-fit bg-[#8dc6ff] px-3 text-2xl rounded-t-md font-bold box-border"
+                class="relative w-fit bg-[#8dc6ff] px-3 text-2xl rounded-t-md font-bold box-border cursor-pointer"
                 @click="activeSection === 'experience' ? activeSection= '' : activeSection= 'experience'"
               >
                 Experience
@@ -89,7 +89,7 @@
           >
             <div class="pl-2 box-border">
               <h2
-                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border"
+                class="relative w-fit bg-[#65adf5] px-3 text-2xl rounded-t-md font-bold box-border cursor-pointer"
                 @click="activeSection === 'skills' ? activeSection= '' : activeSection= 'skills'"
               >
                 Skills

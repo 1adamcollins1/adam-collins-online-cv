@@ -148,6 +148,15 @@
           showArrow.value = true
       }
   }
+
+  function increase(x){
+    x++
+  }
+
+var l = 10
+increase(l)
+console.log(l);
+
   
   onMounted(() => {
   })

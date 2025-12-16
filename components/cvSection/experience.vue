@@ -30,7 +30,7 @@
         <p >Jun. 2023 – Mar. 2025 | <span class="italic">Manchester, UK</span></p>
         <ul class="list-disc pl-5">
             <li>Client-facing role creating websites, web applications and mobile apps in a self-driven work environment.</li>
-            <li>Broad Front-End tech stack including <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span>,  <span class="text-skill" :class="{ highlighted: isHighlighted('reactJS') }">React.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('vueJS') }">Vue.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('nuxtJS') }">Nuxt.JS</span>, and <span class="text-skill" :class="{ highlighted: isHighlighted('tailwind') }">WordPress</span>.</li> 
+            <li>Broad Front-End tech stack including <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('reactJS') }">React.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('vueJS') }">Vue.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('nuxtJS') }">Nuxt.JS</span>, <span class="text-skill" :class="{ highlighted: isHighlighted('jQuery') }">jQuery</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('tailwind') }">WordPress</span>.</li> 
             <li>Managed website deployments using <span class="text-skill" :class="{ highlighted: isHighlighted('githubActions') }">GitHub Actions</span> to services such as Cloudflair </li>
             <li>Released apps on the <span class="text-skill" :class="{ highlighted: isHighlighted('appStore') }">App Store</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">Google Play</span>, packaged using <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">Expo</span>.</li>
             <li>The principal developer and <span class="text-skill" :class="{ highlighted: isHighlighted('projectManagement') }">point of contact</span> for the client for the development of a web application used by council members, electoral candidates and the civil service for the last Police and Crime Commissioner election.</li> 
@@ -41,7 +41,7 @@
         <p >Macro 4</p>
         <p >Nov. 2021 – Jun. 2023 | <span class="italic">Manchester, UK</span></p>
         <ul class="list-disc pl-5">
-            <li>Primarily involved in the designing and coding of web-based applications for an in-house product in <span class="text-skill" :class="{ highlighted: isHighlighted('typescript') }">TypeScript</span> alongside <span class="text-skill" :class="{ highlighted: isHighlighted('scss') }">SCSS</span>.</li>
+            <li>Primarily involved in the designing and coding of web-based applications for an in-house product in <span class="text-skill" :class="{ highlighted: isHighlighted('typescript') }">TypeScript</span> and <span class="text-skill" :class="{ highlighted: isHighlighted('jQuery') }">jQuery</span> alongside <span class="text-skill" :class="{ highlighted: isHighlighted('scss') }">SCSS</span>.</li>
             <li>Designed and developed a lightweight and low code Website builder.</li> 
             <li>Researched and used <span class="text-skill" :class="{ highlighted: isHighlighted('Grafana') }">Grafana</span> alongside <span class="text-skill" :class="{ highlighted: isHighlighted('graphQL') }">GraphQL</span> to create dashboards for the company metrics.</li> 
         </ul>

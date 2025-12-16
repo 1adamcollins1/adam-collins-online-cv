@@ -6,7 +6,7 @@
         >Skills</h2>
         <div class="w-full overflow-scroll flex-1 pb-4">
             <h3 class="font-bold">Languages</h3>
-            <p>TypeScript, Vue.js, ReactJS, React Native, Nuxt.js, Next.js, PHP, Node.js HTML5, JavaScript, CSS, SCSS, Tailwind, Bootstrap, Node.js, WordPress, GraphQL, SQL, Pina</p>
+            <p>TypeScript, Vue.js, ReactJS, React Native, Nuxt.js, Next.js, jQuery, PHP, Node.js HTML5, JavaScript, CSS, SCSS, Tailwind, Bootstrap, Node.js, WordPress, GraphQL, SQL, Pina</p>
         
             <h3 class="font-bold">Development</h3>
             <p>SCRUM, Agile, Jira, Project Management, Client Communication, Project Presentation, QA Testing, UX/UI Design</p>

@@ -15,6 +15,16 @@
             class="py-4 sticky top-0 bg-[#8dc6ff] text-[#e4f1fe] font-bold text-4xl z-10"
         >Experience</h2>
         <h3 class="font-bold">Front-End Developer</h3>
+        <p >mOOv Tech Ltd</p>
+        <p >Mar. 2025 – Present | <span class="italic">Liverpool, UK</span></p>
+        <ul class="list-disc pl-5">
+            <li>Leading Front-end development in a start up environment.</li>
+            <li>Maintaining and developing brand new <span class="text-skill" :class="{ highlighted: isHighlighted('React') }">React</span> web apps and <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span> mobile apps</li> 
+            <li>Taking ownership and responsibility of key <span class="text-skill" :class="{ highlighted: isHighlighted('design') }">design</span>  and <span class="text-skill" :class="{ highlighted: isHighlighted('uxUi') }">UX/UI</span> decisions.</li> 
+        </ul>
+        <br/>
+
+        <h3 class="font-bold">Front-End Developer</h3>
         <p >Urban Zoo</p>
         <p >Apr. 2025 – Oct. 2025 | <span class="italic">Warrington, UK</span></p>
         <ul class="list-disc pl-5">

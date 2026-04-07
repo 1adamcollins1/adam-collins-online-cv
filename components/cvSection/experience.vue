@@ -20,7 +20,7 @@
         <ul class="list-disc pl-5">
             <li>Leading Front-end development in a start up environment.</li>
             <li>Maintaining and developing brand new <span class="text-skill" :class="{ highlighted: isHighlighted('React') }">React</span> web apps and <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span> mobile apps</li> 
-            <li>Taking ownership and responsibility of key <span class="text-skill" :class="{ highlighted: isHighlighted('design') }">design</span>  and <span class="text-skill" :class="{ highlighted: isHighlighted('uxUi') }">UX/UI</span> decisions.</li> 
+            <li>Taking ownership and responsibility of key <span class="text-skill" :class="{ highlighted: isHighlighted('design') }">design</span>  and <span class="text-skill" :class="{ highlighted: isHighlighted('uxUi') }">UX/UI</span> decisions using <span class="text-skill" :class="{ highlighted: isHighlighted('Figma') }">Figma</span> .</li> 
         </ul>
         <br/>
 

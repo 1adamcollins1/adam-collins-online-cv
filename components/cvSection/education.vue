@@ -11,7 +11,7 @@
         <ul class="list-disc pl-5">
             <li>Graded a 2.1.</li>
             <li>Achieved highly in a broard range of modules such as Multimedia Implementation, Graphical Information Systems, Artificial Intelligence Fundamentals, Database Management, Computer Animation and Cyber Security.</li> 
-            <li>Received the Game of the Year and Team of the Year award, awarded by Aston''s Industry Club.</li> 
+            <li>Received the Game of the Year and Team of the Year award, awarded by Aston's Industry Club.</li> 
             <li>Recieved the federation Silver Award from Aston Student's Union for being the co-founder and Vice President of the Aston Drama society.</li>
         </ul>
         <br/>

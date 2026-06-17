@@ -16,7 +16,7 @@
         >Experience</h2>
         <h3 class="font-bold">Front-End Developer</h3>
         <p >mOOv Tech Ltd</p>
-        <p >Mar. 2025 – Present | <span class="italic">Liverpool, UK</span></p>
+        <p >Mar. 2026 – Present | <span class="italic">Liverpool, UK</span></p>
         <ul class="list-disc pl-5">
             <li>Leading Front-end development in a start up environment.</li>
             <li>Maintaining and developing brand new <span class="text-skill" :class="{ highlighted: isHighlighted('React') }">React</span> web apps and <span class="text-skill" :class="{ highlighted: isHighlighted('reactNative') }">React Native</span> mobile apps</li> 
